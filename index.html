@@ -7278,6 +7278,20 @@ async function loadRecentHighRiskDataWithFilter(department, minRiskLevel) {
 function exportHighRiskReport() {
     alert('匯出功能開發中...');
 }
+// 🚨 最簡版本 - 只要這幾行就夠了
+function showSimpleAlert() {
+    const alertHtml = `
+        <div style="position:fixed; top:100px; right:10px; background:#ff4757; color:white; padding:15px; border-radius:10px; z-index:9999; box-shadow:0 5px 15px rgba(0,0,0,0.3);">
+            <div style="font-weight:bold; margin-bottom:8px;">🚨 緊急預警</div>
+            <div>目前有風險需要處理</div>
+            <button onclick="this.parentElement.remove()" style="background:rgba(255,255,255,0.2); border:none; color:white; padding:5px 10px; border-radius:5px; margin-top:8px; cursor:pointer;">關閉</button>
+        </div>
+    `;
+    document.body.insertAdjacentHTML('beforeend', alertHtml);
+}
+
+// 在登入後呼叫
+setTimeout(showSimpleAlert, 2000);
 
 
 </script>
