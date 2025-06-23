@@ -2232,19 +2232,19 @@ div:contains("歡迎"), /* 針對包含「歡迎」文字的元素 */
                                 <div class="col-md-4">
                                     <label for="lowRiskThreshold" class="form-label">低風險閾值 (R值)</label>
                                     <input type="number" class="form-control" id="lowRiskThreshold" 
-                                           value="10" min="1" max="100" step="0.1">
+                                           value="15" min="1" max="100" step="0.1">
                                     <small class="text-muted">低於此值為綠燈</small>
                                 </div>
                                 <div class="col-md-4">
                                     <label for="mediumRiskThreshold" class="form-label">中風險閾值 (R值)</label>
                                     <input type="number" class="form-control" id="mediumRiskThreshold" 
-                                           value="20" min="1" max="100" step="0.1">
+                                           value="30" min="1" max="100" step="0.1">
                                     <small class="text-muted">超過此值為紅燈</small>
                                 </div>
                                 <div class="col-md-4">
                                     <label for="criticalRiskThreshold" class="form-label">緊急風險閾值 (R值)</label>
                                     <input type="number" class="form-control" id="criticalRiskThreshold" 
-                                           value="30" min="1" max="100" step="0.1">
+                                           value="50" min="1" max="100" step="0.1">
                                     <small class="text-muted">超過此值立即通知</small>
                                 </div>
                             </div>
@@ -3079,7 +3079,7 @@ function showIOSInstallPrompt() {
 
 
 // Google Apps Script Web App URL (部署為網頁應用程式後的URL)
-const scriptUrl = 'https://script.google.com/macros/s/AKfycbwkGB8M6Xz1eWH8_iN37Q_p8cioQiuaohX3QUsQhVlpD3OCd8LaIzlZCZgf2i-9ZQ2qTg/exec';
+const scriptUrl = 'https://script.google.com/macros/s/AKfycbz5RX2NGp6uxwmWX1-R9LaPojS6pOXDm7G63REiF4J3HXxf6tOcZsdbVx-J4MHVDdGY/exec';
 
 // 全域變數存儲圖表實例
 let riskTrendChart, departmentRiskChart, riskCategoryChart, riskLevelChart, monthlyComparisonChart;
@@ -8596,8 +8596,17 @@ function addClearCacheButton() {
     <i class="fas fa-arrow-left"></i> 返回
 </button>
         </div>
-    </div>     
+    
+
+
+    </div>
+
+    
+   
+    
+   
 </div>
+
 
 </body>
 </html>
