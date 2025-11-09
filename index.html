@@ -2399,9 +2399,9 @@ div:contains("歡迎"), /* 針對包含「歡迎」文字的元素 */
     
     <!-- 部門風險係數頁面 -->
 <div id="dept-risk-index-page" class="dashboard-page" style="display: none;">
-   <div class="logo-container">
-    <img src="R1c.png" alt="TCC.AI Logo" class="logo" width="250" height="250">
-</div>
+    <div class="logo-container">
+        <img src="LOGO.png" alt="TCC.AI Logo" class="logo">
+    </div>
     <h2 class="text-center mb-4">部門風險係數</h2>
     
     <div class="table-responsive">
@@ -2456,7 +2456,6 @@ div:contains("歡迎"), /* 針對包含「歡迎」文字的元素 */
         <img src="LOGO.png" alt="TCC.AI Logo" class="logo">
     </div>
     <h2 class="text-center mb-4">數據分析儀表板</h2>
-    <button class="btn btn-secondary mt-3" id="back-to-dashboard-from-analytics">返回</button>
     
     <!-- 時間範圍選擇器 -->
     <div class="row mb-4">
@@ -3075,7 +3074,7 @@ function showIOSInstallPrompt() {
 
 
 // Google Apps Script Web App URL (部署為網頁應用程式後的URL)
-const scriptUrl = 'https://script.google.com/macros/s/AKfycbyCYdI8XyR5v4kw1uvDn5gb79F1M5HbthcD9QIgUeqCsv-gBU652AymEZnqSjD4RuGwUA/exec';
+const scriptUrl = 'https://script.google.com/macros/s/AKfycbz5RX2NGp6uxwmWX1-R9LaPojS6pOXDm7G63REiF4J3HXxf6tOcZsdbVx-J4MHVDdGY/exec';
 
 // 全域變數存儲圖表實例
 let riskTrendChart, departmentRiskChart, riskCategoryChart, riskLevelChart, monthlyComparisonChart;
@@ -8506,9 +8505,6 @@ function addClearCacheButton() {
     <h2 class="text-center mb-4">
         <i class="fas fa-clipboard-list text-warning"></i> 追蹤考核
     </h2>
-     <button type="button" class="btn btn-secondary" id="backFromTrackingBtn" onclick="window.location.reload();">
-    <i class="fas fa-arrow-left"></i> 返回
-</button>
     
         <!-- 風險追蹤區塊 -->
         <div class="card mb-4">
@@ -8533,16 +8529,16 @@ function addClearCacheButton() {
                             <tr>
                                 <th style="width: 5%">時間</th>
                                 <th style="width: 5%">部門</th>
-                                <th style="width: 6%">風險項目</th>
-                                <th style="width: 10%">風險描述</th>
+                                <th style="width: 8%">風險項目</th>
+                                <th style="width: 12%">風險描述</th>
                                 <th style="width: 5%">類別</th>
                                 <th style="width: 3%">等級</th>
                                 <th style="width: 3%">次數</th>
-                                <th style="width: 25%">原因說明</th>
+                                <th style="width: 19%">原因說明</th>
                                 <th style="width: 5%">提報部門</th>
                                <th style="width: 20%">解決方案</th>
-                                <th style="width: 7%">時限</th>
-                                <th style="width: 6%">是否已解決</th>
+                                <th style="width: 8%">時限</th>
+                                <th style="width: 7%">是否已解決</th>
                             </tr>
                         </thead>
                         <tbody id="riskTrackingTableBody">
